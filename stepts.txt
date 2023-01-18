@@ -29,3 +29,24 @@
 
     Esto ayuda a que la aplicacion sea responsive
     mt(margin top) en pantallas large sera de 212 px y en pantallas extra small será de 70 px
+
+6.Search Exercises
+
+    SearchExercises.jsx
+
+        Se divide en tres partes principales, las cuales las envuelve un stack que centra horizontal y verticalmente:
+
+           - Awesome Exercises You Should Know
+           - Input Busqueda
+           - Body Parts 
+                -> HorizontalScrollbar.jsx 
+                    Itera sobre la data(bodyParts) y envuelve todo en un ScrollMenu(carrusel)
+                     -> Cada bodyPart es pasada al componente BodyPart.jsx:
+                          El cual muestra una imagen y el nombre de la parte del cuerpo
+    
+    Estados
+        - bodyPart -> Cambia al dar click sobre una card
+        - exercises -> Es la lista de ejercicios la cual se actualiza al hacer las busquedas con filtros
+            search(filtro) -> Cambia al onChanges del input
+    
+    

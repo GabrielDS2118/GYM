@@ -7,4 +7,6 @@
         las dependencias del package.json para tener las mismas versiones
     
     Tambien copiar del repositorio los estilos y la carpeta assets
-        
+
+
+2.File and Folder Structure

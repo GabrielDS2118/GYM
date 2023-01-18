@@ -10,3 +10,10 @@
 
 
 2.File and Folder Structure
+
+3.Navbar
+
+    Stack: 
+        Nos permite manejar la orientación(vertical/horizontal) -> direction 
+        y el espaciado -> gap
+        de los items

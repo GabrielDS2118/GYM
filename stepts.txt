@@ -1,0 +1,10 @@
+1.SETUP
+
+    client/ -> npx create-react-app .
+
+    Dependencias
+        Ir a https://github.com/adrianhajdin/project_fitness_app y copiar 
+        las dependencias del package.json para tener las mismas versiones
+    
+    Tambien copiar del repositorio los estilos y la carpeta assets
+        

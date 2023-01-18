@@ -19,3 +19,13 @@
         de los items
 
 4.Structure Home
+
+5.HeroBanner
+
+    sx={{
+        mt: { lg: '212px', xs: '70px' },
+        ml: { sm: '50px' },
+      }}
+
+    Esto ayuda a que la aplicacion sea responsive
+    mt(margin top) en pantallas large sera de 212 px y en pantallas extra small será de 70 px

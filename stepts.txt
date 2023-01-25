@@ -49,4 +49,5 @@
         - exercises -> Es la lista de ejercicios la cual se actualiza al hacer las busquedas con filtros
             search(filtro) -> Cambia al onChanges del input
     
-    
+
+7.Exercises (Pagination)

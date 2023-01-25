@@ -51,3 +51,5 @@
     
 
 7.Exercises (Pagination)
+
+8.Exercise Details (Page)

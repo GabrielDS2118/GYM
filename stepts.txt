@@ -53,3 +53,5 @@
 7.Exercises (Pagination)
 
 8.Exercise Details (Page)
+
+9.Detail Component

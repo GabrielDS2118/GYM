@@ -3,13 +3,14 @@ import { useParams } from 'react-router-dom';
 
 import { Box } from '@mui/material';
 
-import { exerciseOptions, fetchData } from '../utils/fecthData';
+import { exerciseOptions, fetchData, youtubeOptions } from '../utils/fecthData';
 import Detail from '../components/Detail';
 import ExerciseVideos from '../components/ExerciseVideos';
 import SimilarExercise from '../components/SimilarExercise';
 
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
+  const [exerciseVideos, setExerciseVideos] = useState([]);
   const { id } = useParams();
 
   //Cada vez que cambia el id se ejecuta la funcion
@@ -25,6 +26,12 @@ const ExerciseDetail = () => {
       );
 
       setExerciseDetail(exerciseDetailData);
+
+      const exerciseVideosData = await fetchData(
+        `${youtubeSearchUrl}/search?query=${exerciseDetailData.name}`,
+        youtubeOptions
+      );
+      setExerciseVideos(exerciseVideosData.contents);
     };
 
     fetchExercisesData();
@@ -32,7 +39,10 @@ const ExerciseDetail = () => {
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />
-      <ExerciseVideos />
+      <ExerciseVideos
+        exerciseVideos={exerciseVideos}
+        name={exerciseDetail.name}
+      />
       <SimilarExercise />
     </Box>
   );

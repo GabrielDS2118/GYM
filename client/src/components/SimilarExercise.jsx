@@ -17,6 +17,16 @@ const SimilarExercise = ({ targetMuscleExercises, equipmentExercises }) => {
           <Loader />
         )}
       </Stack>
+      <Typography variant="h4" mb={5} mt={25} textAlign="center">
+        Exercises that use the same equipment
+      </Typography>
+      <Stack direction="row" sx={{ p: '2', position: 'relative' }}>
+        {equipmentExercises.length ? (
+          <HorizontalScrollbar data={equipmentExercises} />
+        ) : (
+          <Loader />
+        )}
+      </Stack>
     </Box>
   );
 };

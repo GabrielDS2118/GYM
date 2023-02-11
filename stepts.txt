@@ -64,3 +64,7 @@
 
 13.Footer
 
+14.Deployment
+    npm run build
+    https://www.netlify.com/
+
